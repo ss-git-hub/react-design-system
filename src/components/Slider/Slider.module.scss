@@ -1,0 +1,51 @@
+@use '../../styles/variables.scss' as variables;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 162px;
+  height: 4px;
+}
+
+.label {
+  font-size: variables.$font-size-md;
+  font-weight: variables.$font-weight-medium;
+  color: variables.$color-common-black;
+  margin-bottom: 0.25rem;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.track {
+  position: relative;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  flex: 1;
+  transition: background 0.2s;
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  left: var(--slider-thumb-position, 0%);
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: variables.$primary-color-main;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  transition: background 0.2s;
+  cursor: pointer;
+  justify-content: center;
+  &:hover {
+    box-shadow: 0 0 0 8px rgba(75, 122, 138, 0.16);
+  }
+  &:active {
+    box-shadow: 0 0 0 8px rgba(75, 122, 138, 0.16);
+  }
+}

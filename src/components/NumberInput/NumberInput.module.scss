@@ -1,0 +1,40 @@
+@use '../../styles/variables.scss' as variables;
+
+.numberInputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+  font-size: variables.$font-size-md;
+  line-height: 20px;
+  font-weight: variables.$font-weight-medium;
+  color: variables.$color-grey-800;
+}
+
+.buttonInputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid variables.$color-grey-400;
+    border-radius: 4px;
+    padding: 2px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.focused {
+  border: 1px solid variables.$color-grey-500;
+}
+
+.disabled {
+  background-color: variables.$color-grey-50;
+  pointer-events: none;
+}
+
+.error {
+  color: variables.$color-error;
+  font-size: variables.$font-size-sm;
+  margin-top: 4px;
+}

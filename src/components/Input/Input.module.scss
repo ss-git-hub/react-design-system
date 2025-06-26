@@ -1,0 +1,71 @@
+@use '../../styles/variables.scss' as variables;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: variables.$font-size-md;
+  line-height: 20px;
+  font-weight: variables.$font-weight-medium;
+  color: variables.$color-grey-800;
+}
+
+.input {
+  font-family: variables.$font-family-primary;
+  border-radius: 8px;
+  gap: 8px;
+  background: variables.$color-common-white;
+  color: variables.$color-common-black;
+  border: 1px solid variables.$color-grey-400;
+  outline: none;
+
+  &:hover:not(:disabled) {
+    border-color: variables.$color-grey-500;
+  }
+
+  &:hover:focus-visible {
+    border-color: variables.$primary-color-main;
+  }
+
+  &:disabled {
+    background: variables.$color-grey-50;
+    color: variables.$color-grey-500;
+    border-color: variables.$color-grey-400;
+    cursor: not-allowed;
+  }
+}
+
+.md {
+  height: 32px;
+  font-size: variables.$font-size-md;
+  font-weight: variables.$font-weight-semibold;
+  line-height: 16px;
+  width: 178px;
+  padding: 8px 8px 8px 16px;
+}
+
+.error {
+  color: variables.$color-error;
+  font-size: variables.$font-size-sm;
+  margin-top: 2px;
+}
+
+.required {
+  color: variables.$color-error;
+  margin-left: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;  
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
