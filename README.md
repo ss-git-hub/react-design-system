@@ -29,6 +29,12 @@ npm install
 npm run dev
 ```
 
+### 3. **Run tests**
+
+```bash
+npm test
+```
+
 ### 3. **Build for production**
 
 ```bash
