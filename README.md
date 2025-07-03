@@ -17,6 +17,10 @@ This project provides a robust foundation for building consistent, reusable UI c
 
 ## 📦 Getting Started
 
+### Prerequisites
+
+- You must have Node.js 20. Use nvm to install and use different node versions.
+
 ### 1. **Install dependencies**
 
 ```bash
@@ -32,7 +36,7 @@ npm run dev
 ### 3. **Run tests**
 
 ```bash
-npm test
+npm run test
 ```
 
 ### 3. **Build for production**
